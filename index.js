@@ -23,7 +23,7 @@ client.connect((err) => {
 
 const collection = client.db('Henco').collection('Customer');
 
-collection.findOne({ "_id" : ObjectId("641286dd58d34185fd9902d0") }, (err, resultado) => {
+collection.findOne({ customer : "CLIENTE 1" }, (err, resultado) => {
     if (err) {
       console.error('Error al buscar el documento:', err);
     } else {
