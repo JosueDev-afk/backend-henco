@@ -1,15 +1,22 @@
 {
-    "version": 2,
-    "builds":[
-        {
-            "src":"./index.js",
-            "use": "@vercel/node"
+    "builds": [
+      {
+        "src": "angular.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "buildCommand": "ng build --prod",
+          "outputDirectory": "dist/my-dashboard"
         }
+      }
     ],
-    "routes":[
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ]
-}
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ],
+    "env": {
+      "MONGODB_URI": "@my-mongodb-uri"
+    }
+  }
+  
