@@ -1,0 +1,74 @@
+<h2>Henco DataBase</h2>
+<table class="table">
+  <thead>
+    <tr>
+        <th>ID</th>
+        <th>Henco Ref</th>
+        <th>ETA</th>
+        <th>Customer</th>
+        <th>Customer Group</th>
+        <th> Supervisor</th>
+        <th>Ejecutivo de Henco</th>
+        <th>Quoted By</th>
+        <th>Created By</th>
+        <th>Status</th>
+        <th>Henco Custom</th>
+        <th>Tipo de servicio</th>
+        <th>Tipo de operacion</th>
+        <th>Pais de origen</th>
+        <th>Pais de destino</th>
+        <th>Trade</th>
+        <th>Teus</th>
+        <th>Customs Operation</th>
+        <th>Free Hand</th>
+        <th>Servicio</th>
+        <th>SO</th>
+        <th>SO Date</th>
+        <th>Fecha de llegada</th>
+        <th>EIRDate</th>
+        <th>Industria</th>
+        <th>Carrier Name</th>
+        <th>Agente</th>
+        <th>CBM</th>
+        <th>Peso</th>
+        <th>Tipo de paquete</th>
+        <th>Cantidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+        <td>{{ user._id }}</td>
+        <td>{{ user.HencoRef }}</td>
+        <td>{{ user.ETA }}</td>
+        <td>{{ user.F_Date }}</td>
+        <td>{{ user.Customer }}</td>
+        <td>{{ user.CustomerGroup }}</td>
+        <td>{{ user.Supervisor }}</td>
+        <td>{{ user.HencoExecutive }}</td>
+        <td>{{ user.QuotedBy }}</td>
+        <td>{{ user.CreatedBy }}</td>
+        <td>{{ user.BookingStatus }}</td>
+        <td>{{ user.HencoCustom }}</td>
+        <td>{{ user.TypeOfService }}</td>
+        <td>{{ user.OperationType }}</td>
+        <td>{{ user.OriginCountry }}</td>
+        <td>{{ user.DestinationCountry }}</td>
+        <td>{{ user.Trade }}</td>
+        <td>{{ user.Teus }}</td>
+        <td>{{ user.CustomsOperation }}</td>
+        <td>{{ user.FreeHand }}</td>
+        <td>{{ user.Service }}</td>
+        <td>{{ user.SO }}</td>
+        <td>{{ user.SODate }}</td>
+        <td>{{ user.ArrivalDate }}</td>
+        <td>{{ user.EIRDate }}</td>
+        <td>{{ user.Industry }}</td>
+        <td>{{ user.CarrierName }}</td>
+        <td>{{ user.Agent }}</td>
+        <td>{{ user.CBM }}</td>
+        <td>{{ user.Weight }}</td>
+        <td>{{ user.Typeofpackage }}</td>
+        <td>{{ user.Quantity }}</td>
+    </tr>
+  </tbody>
+</table>
