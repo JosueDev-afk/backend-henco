@@ -11,6 +11,7 @@ import { UserService } from './services/user.service';
           <th>ID</th>
           <th>Henco Ref</th>
           <th>ETA</th>
+          <th>F_Date</th>
           <th>Customer</th>
           <th>Customer Group</th>
           <th> Supervisor</th>

@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = `http://mongodb+srv://nietzshn:SCTQCvgViMZBnOy1@cluster0.fjmu5cz.mongodb.net/?retryWrites=true&w=majority/Customer2`;
+  private apiUrl = `https://api-henco.nietzshn.repl.co/products`;
 
   constructor(private http: HttpClient) { }
 
